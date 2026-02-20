@@ -19,7 +19,7 @@ Ekran Görüntüsü
 
  Kurulum
 
- Tek Satır Terminal Kurulumu (Önerilen)
+ Tek Satır Terminal Kurulumu (Önerilen):
  
  wget https://github.com/SENTOR-X/youtube-downloader/releases/latest/download/youtube-downloader.flatpak && flatpak install youtube-downloader.flatpak
 
