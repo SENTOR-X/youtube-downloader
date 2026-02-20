@@ -1,12 +1,12 @@
-YouTube Downloader
+# YouTube Downloader
 
 Modern GTK4 + Libadwaita tabanlı, performans odaklı bir YouTube indirme uygulaması.
 Flatpak sandbox uyumlu, kararlı ve temiz bir masaüstü deneyimi sunar.
 
-Ekran Görüntüsü
+## Ekran Görüntüsü
 <img width="811" height="810" alt="Ekran Görüntüsü - 2026-02-20 22-29-30" src="https://github.com/user-attachments/assets/f54d5483-ba43-4440-b0f3-b4812b840fd3" />
 
-Özellikler
+## Özellikler
 
  • Video ve ses indirme (yt-dlp altyapısı)
  
@@ -31,6 +31,7 @@ Ekran Görüntüsü
  
  • Flatpak sandbox uyumlu yapı
 
+
 ## Kurulum
 
 Tek Satır Terminal Kurulumu (Önerilen):
@@ -45,7 +46,9 @@ Kurulum sonrası çalıştırmak için:
 flatpak run com.sentor.youtubedownloader
 ```
 
- GUI ile Kurulum
+
+## GUI ile Kurulum
+ 
  1. Release sayfasından .flatpak dosyasını indir
  
  
@@ -54,7 +57,10 @@ flatpak run com.sentor.youtubedownloader
  
  3. Yazılım Merkezi üzerinden kur
 
-Teknoloji
+
+
+## Teknoloji
+
 
  • Python 3
  
@@ -73,7 +79,8 @@ Teknoloji
  
  • Flatpak (org.gnome.Platform)
 
-Dil
+
+## Dil
 
 
 Arayüz şu an yalnızca Türkçe olarak sunulmaktadır.
