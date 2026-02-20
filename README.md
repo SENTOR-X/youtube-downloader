@@ -47,18 +47,33 @@ flatpak run com.sentor.youtubedownloader
 
  GUI ile Kurulum
  1. Release sayfasından .flatpak dosyasını indir
+ 
+ 
  2. Dosyaya çift tıkla
+ 
+ 
  3. Yazılım Merkezi üzerinden kur
 
 Teknoloji
 
  • Python 3
+ 
+ 
  • GTK 4
+ 
+ 
  • Libadwaita
+ 
+ 
  • yt-dlp
+ 
+ 
  • FFmpeg
+ 
+ 
  • Flatpak (org.gnome.Platform)
 
 Dil
+
 
 Arayüz şu an yalnızca Türkçe olarak sunulmaktadır.
