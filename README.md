@@ -7,6 +7,7 @@ Ekran Görüntüsü
 <img width="811" height="810" alt="Ekran Görüntüsü - 2026-02-20 22-29-30" src="https://github.com/user-attachments/assets/f54d5483-ba43-4440-b0f3-b4812b840fd3" />
 
 Özellikler
+
  • Video ve ses indirme (yt-dlp altyapısı)
  • Playlist desteği
  • Light / Dark tema otomatik uyumu
@@ -32,6 +33,7 @@ Kurulum sonrası çalıştırmak için:
  3. Yazılım Merkezi üzerinden kur
 
 Teknoloji
+
  • Python 3
  • GTK 4
  • Libadwaita
@@ -40,4 +42,5 @@ Teknoloji
  • Flatpak (org.gnome.Platform)
 
 Dil
+
 Arayüz şu an yalnızca Türkçe olarak sunulmaktadır.
