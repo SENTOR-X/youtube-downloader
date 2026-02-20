@@ -9,12 +9,26 @@ Ekran Görüntüsü
 Özellikler
 
  • Video ve ses indirme (yt-dlp altyapısı)
+ 
+ 
  • Playlist desteği
+ 
+ 
  • Light / Dark tema otomatik uyumu
+ 
+ 
  • M4A ve Opus formatlarında kapak görseli (cover art) embed desteği
+
+ 
  • Opus remux ve metadata koruma
+ 
+ 
  • İptal durumunda yarım dosyaları otomatik temizleme
+ 
+ 
  • İndirilen dosyayı dosya yöneticisinde açma
+ 
+ 
  • Flatpak sandbox uyumlu yapı
 
 ## Kurulum
