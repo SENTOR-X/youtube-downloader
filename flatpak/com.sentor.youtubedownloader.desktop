@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=YouTube Downloader
+Exec=youtube-downloader
+Icon=com.sentor.youtubedownloader
+Categories=Network;Utility;
+Terminal=false

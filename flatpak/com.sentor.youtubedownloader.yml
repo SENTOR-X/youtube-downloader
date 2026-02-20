@@ -1,0 +1,52 @@
+app-id: com.sentor.youtubedownloader
+runtime: org.gnome.Platform
+runtime-version: '49'
+sdk: org.gnome.Sdk
+command: youtube-downloader
+
+build-options:
+  build-args:
+    - --share=network
+
+finish-args:
+  - --share=network
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --device=dri
+  - --share=ipc
+  - --filesystem=xdg-download:rw
+
+modules:
+  - name: yt-dlp
+    buildsystem: simple
+    build-commands:
+      - pip3 install --no-cache-dir --prefix=/app yt-dlp
+      - install -d /app/bin
+      - printf '%s\n' '#!/bin/sh' 'exec /usr/bin/python3 -m yt_dlp "$@"' > /app/bin/yt-dlp
+      - chmod +x /app/bin/yt-dlp
+
+  - name: youtube-downloader
+    buildsystem: simple
+    sources:
+      - type: dir
+        path: ..
+    build-commands:
+      - install -Dm755 flatpak/youtube-downloader /app/bin/youtube-downloader
+      - install -Dm644 flatpak/com.sentor.youtubedownloader.desktop /app/share/applications/com.sentor.youtubedownloader.desktop
+      - install -Dm644 icon.png /app/share/icons/hicolor/512x512/apps/com.sentor.youtubedownloader.png
+      - mkdir -p /app/lib/youtube-downloader
+      - cp -r app.py core /app/lib/youtube-downloader/
+      - find /app/lib/youtube-downloader -type d -name "__pycache__" -prune -exec rm -rf {} +
+      - find /app/lib/youtube-downloader -type f -name "*.pyc" -delete
+
+  - name: opustags
+    buildsystem: simple
+    sources:
+      - type: git
+        url: https://github.com/fmang/opustags.git
+        tag: 1.10.1
+    build-commands:
+      - mkdir -p build
+      - cd build && cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/app ..
+      - cd build && cmake --build .
+      - cd build && cmake --install .

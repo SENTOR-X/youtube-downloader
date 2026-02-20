@@ -1,0 +1,4 @@
+#!/bin/sh
+export PATH="/app/bin:$PATH"
+export PYTHONPATH="/app/lib/youtube-downloader:$PYTHONPATH"
+exec python3 /app/lib/youtube-downloader/app.py "$@"
