@@ -17,11 +17,13 @@ Ekran Görüntüsü
  • İndirilen dosyayı dosya yöneticisinde açma
  • Flatpak sandbox uyumlu yapı
 
- Kurulum
+## Kurulum
 
- Tek Satır Terminal Kurulumu (Önerilen):
- 
- wget https://github.com/SENTOR-X/youtube-downloader/releases/latest/download/youtube-downloader.flatpak && flatpak install youtube-downloader.flatpak
+Tek Satır Terminal Kurulumu (Önerilen):
+
+```bash
+wget https://github.com/SENTOR-X/youtube-downloader/releases/latest/download/youtube-downloader.flatpak && flatpak install youtube-downloader.flatpak
+```
 
 Kurulum sonrası çalıştırmak için:
  
