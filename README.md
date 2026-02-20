@@ -49,7 +49,7 @@ flatpak run com.sentor.youtubedownloader
 
 ## GUI ile Kurulum
  
- 1. Release sayfasından .flatpak dosyasını indir
+ 1. Release sayfasından ''youtube-downloader.flatpak'' dosyasını indir
  
  
  2. Dosyaya çift tıkla
