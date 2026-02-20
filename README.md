@@ -26,8 +26,10 @@ wget https://github.com/SENTOR-X/youtube-downloader/releases/latest/download/you
 ```
 
 Kurulum sonrası çalıştırmak için:
- 
- flatpak run com.sentor.youtubedownloader
+
+```bash
+flatpak run com.sentor.youtubedownloader
+```
 
  GUI ile Kurulum
  1. Release sayfasından .flatpak dosyasını indir
